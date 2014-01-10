@@ -1,0 +1,116 @@
+register tokenizers/friso
+[[0,0.0,0.0],true]
+tokenize TokenFriso "Groonga是全文搜索引擎的列存储功能。你可以开发一个全文搜索功能与高性能的应用程序，并使用Groonga。"
+[
+  [
+    0,
+    0.0,
+    0.0
+  ],
+  [
+    {
+      "value": "Groonga",
+      "position": 0
+    },
+    {
+      "value": "是",
+      "position": 1
+    },
+    {
+      "value": "全文",
+      "position": 2
+    },
+    {
+      "value": "搜索引擎",
+      "position": 3
+    },
+    {
+      "value": "的",
+      "position": 4
+    },
+    {
+      "value": "列",
+      "position": 5
+    },
+    {
+      "value": "存储",
+      "position": 6
+    },
+    {
+      "value": "功能",
+      "position": 7
+    },
+    {
+      "value": "。",
+      "position": 8
+    },
+    {
+      "value": "你",
+      "position": 9
+    },
+    {
+      "value": "可以",
+      "position": 10
+    },
+    {
+      "value": "开发",
+      "position": 11
+    },
+    {
+      "value": "一个",
+      "position": 12
+    },
+    {
+      "value": "全文",
+      "position": 13
+    },
+    {
+      "value": "搜索",
+      "position": 14
+    },
+    {
+      "value": "功能",
+      "position": 15
+    },
+    {
+      "value": "与",
+      "position": 16
+    },
+    {
+      "value": "高性能",
+      "position": 17
+    },
+    {
+      "value": "的",
+      "position": 18
+    },
+    {
+      "value": "应用",
+      "position": 19
+    },
+    {
+      "value": "程序",
+      "position": 20
+    },
+    {
+      "value": "，",
+      "position": 21
+    },
+    {
+      "value": "并使",
+      "position": 22
+    },
+    {
+      "value": "用",
+      "position": 23
+    },
+    {
+      "value": "Groonga",
+      "position": 24
+    },
+    {
+      "value": "。",
+      "position": 25
+    }
+  ]
+]
