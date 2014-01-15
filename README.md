@@ -23,7 +23,7 @@ Register `tokenizers/friso`:
 
 Now, you can use `TokenFriso` that tokenizes the sentence by each word segmentation:
 
-    > tokenize TokenFriso "我到北京天安门"
+    > tokenize TokenFriso "Groonga是一款可嵌入式的全文搜寻引擎"
     [
       [
         0,
@@ -32,24 +32,44 @@ Now, you can use `TokenFriso` that tokenizes the sentence by each word segmentat
       ],
       [
         {
-          "value": "我",
+          "value": "Groonga",
           "position": 0
         },
         {
-          "value": "到",
+          "value": "是",
           "position": 1
         },
         {
-          "value": "北京",
+          "value": "一款",
           "position": 2
         },
         {
-          "value": "天安门",
+          "value": "可",
           "position": 3
+        },
+        {
+          "value": "嵌入",
+          "position": 4
+        },
+        {
+          "value": "式",
+          "position": 5
+        },
+        {
+          "value": "的",
+          "position": 6
+        },
+        {
+          "value": "全文",
+          "position": 7
+        },
+        {
+          "value": "搜寻引擎",
+          "position": 8
         }
       ]
     ]
-
+  
 ## License
 
 LGPLv2.1. It is same as Groonga.
