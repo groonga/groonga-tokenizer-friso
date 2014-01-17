@@ -9,9 +9,11 @@ Install libgroonga-dev, friso in the advance.
 
 Build this tokenizer.
 
-    % ./configure --with-friso=PATH_TO_LIB_DIR --with-friso-ini=PATH_TO_INI_FILE
+    % ./configure --with-friso=PATH_TO_FRISO_DIR --with-friso-ini=PATH_TO_INI_FILE
     % make
     % sudo make install
+
+Friso is installed into `/usr/lib` and `/usr/include/friso` by default. In this case, you should specify `--with-friso=/usr` option.
 
 ## Usage
 

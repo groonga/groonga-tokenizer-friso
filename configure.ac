@@ -33,15 +33,13 @@ fi
 
 AC_ARG_WITH(friso,
             [AS_HELP_STRING([--with-friso=PATH],
-            [specify path to friso library directory.])],
-            [friso_libdir="$withval"],
-            [friso_libdir=""])
-if test "x$friso_libdir" != "x"; then
-   friso_include=`echo $friso_libdir | sed -e 's/\(.\+\)\/lib\/\?/\1/'`
-   FRISO_CFLAGS="-I$friso_include/include"
-   FRISO_LIBS="-lfriso"
-   FRISO_LDFLAGS="-L$friso_libdir ${FRISO_LIBS}"
-fi
+            [specify path to friso directory. (default=/usr)])],
+            [friso_dir="$withval"],
+            [friso_dir="/usr"])
+FRISO_CFLAGS="-I$friso_dir/include"
+FRISO_LIBS="-lfriso"
+FRISO_LDFLAGS="-L$friso_dir/lib ${FRISO_LIBS}"
+
 AC_SUBST(FRISO_CFLAGS)
 AC_SUBST(FRISO_LIBS)
 AC_SUBST(FRISO_LDFLAGS)
