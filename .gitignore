@@ -3,9 +3,11 @@ Makefile.in
 *.o
 *.la
 *.lo
+*.pc
 .libs/
 .deps/
 /tmp
+/config/*
 /m4/
 /aclocal.m4
 /autom4te.cache/
@@ -24,3 +26,6 @@ Makefile.in
 /stamp-h1
 /packages/apt/**/*.log
 /packages/yum/**/*.log
+/packages/apt/repositories
+/packages/yum/repositories
+/packages/rpm/*/*.spec
