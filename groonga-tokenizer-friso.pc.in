@@ -1,0 +1,5 @@
+plugin_name=tokenizers/friso
+
+Name: groonga-tokenizer-friso
+Description: Chineze tokenizer plugin for Groonga
+Version: @VERSION@
