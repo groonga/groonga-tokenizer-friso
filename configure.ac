@@ -73,8 +73,14 @@ AC_SUBST(tokenizers_pluginsdir)
 
 AC_CONFIG_FILES([
   Makefile
+  groonga-tokenizer-friso.pc
   tokenizers/Makefile
   test/Makefile
+  packages/Makefile
+  packages/apt/Makefile
+  packages/yum/Makefile
+  packages/rpm/centos/groonga-tokenizer-friso.spec
+  packages/rpm/fedora/groonga-tokenizer-friso.spec
 ])
 
 AC_OUTPUT
