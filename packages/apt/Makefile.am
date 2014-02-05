@@ -3,7 +3,7 @@ DISTRIBUTIONS = debian ubuntu
 CHROOT_BASE = /var/lib/chroot
 ARCHITECTURES = i386 amd64
 CODES = wheezy jessie unstable precise quantal saucy
-FRISO_PACKAGE = groonga-keyring
+FRISO_PACKAGE = friso
 FRISO_VERSION = 1.6.0
 FRISO_BASE_NAME = $(FRISO_PACKAGE)-$(FRISO_VERSION)
 
@@ -47,7 +47,7 @@ upload: ensure-rsync-path
 	     dists pool $(RSYNC_PATH)/$${distribution});	\
 	done
 
-build: build-package-deb
+build: build-friso-deb build-package-deb
 
 build-package-deb: source
 	./build-in-chroot.sh						\
@@ -62,9 +62,13 @@ build-friso-deb: friso-source
 
 source: ../$(PACKAGE)-$(VERSION).tar.gz
 
-friso-source: $(FRISO_PACKAGE)-$(FRISO_VERSION)-src-lib-dict.zip
-	wget https://friso.googlecode.com/files/friso-1.6.0-src-lib-dict.zip
-
+friso-source: $(FRISO_PACKAGE)-$(FRISO_VERSION).tar.gz
 
 ../$(PACKAGE)-$(VERSION).tar.gz:
 	ln -s $(abs_top_builddir)/$(PACKAGE)-$(VERSION).tar.gz ../
+
+$(FRISO_PACKAGE)-$(FRISO_VERSION).tar.gz:
+	wget https://friso.googlecode.com/files/$(FRISO_PACKAGE)-$(FRISO_VERSION)-src-lib-dict.zip
+	unzip $(FRISO_PACKAGE)-$(FRISO_VERSION)-src-lib-dict.zip
+	tar cvf $(FRISO_PACKAGE)-$(FRISO_VERSION).tar $(FRISO_PACKAGE)-$(FRISO_VERSION)
+	gzip $(FRISO_PACKAGE)-$(FRISO_VERSION).tar
