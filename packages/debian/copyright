@@ -1,0 +1,6 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: *
+Copyright: Copyright 2013-2014 HAYASHI Kentaro <hayashi@clear-code.com>
+License: LGPL-2.1
+ See /usr/share/common-licenses/LGPL-2.1 for the full license text.
