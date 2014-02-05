@@ -22,3 +22,5 @@ Makefile.in
 /ltmain.sh
 /missing
 /stamp-h1
+/packages/apt/**/*.log
+/packages/yum/**/*.log
