@@ -25,6 +25,7 @@ Makefile.in
 /missing
 /stamp-h1
 /packages/apt/**/*.log
+/packages/apt/friso-*
 /packages/yum/**/*.log
 /packages/apt/repositories
 /packages/yum/repositories
