@@ -12,4 +12,8 @@ export DH_OPTIONS
 # disable 'make check'.
 override_dh_auto_test:
 
+override_dh_auto_build:
+	cd src && make
+
 override_dh_install:
+	cd src && make install
