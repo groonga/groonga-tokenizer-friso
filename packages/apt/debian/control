@@ -1,0 +1,18 @@
+Source: friso
+Section: libs
+Priority: optional
+Maintainer: Chenxin <chenxin61931@gmail.com>
+Build-Depends:
+  debhelper (>= 9),
+  autotools-dev
+Standards-Version: 3.9.6
+Homepage: https://code.google.com/p/friso/
+
+Package: friso
+Section: libs
+Architecture: any
+Depends:
+  ${misc:Depends},
+  ${shlibs:Depends}
+Description: Chinese word segmenter library
+

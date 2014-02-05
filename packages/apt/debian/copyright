@@ -1,0 +1,6 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: *
+Copyright: Copyright Chenxin <chenxin61935@gmail.com>
+License: Apache-2.0
+ See /usr/share/common-licenses/Apache-2.0 for the full license text.
