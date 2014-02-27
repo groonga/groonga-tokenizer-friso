@@ -13,7 +13,9 @@ export DH_OPTIONS
 override_dh_auto_test:
 
 override_dh_auto_build:
-	cd src && make
+	touch friso.ini.in
+	$(MAKE) friso.ini
+	$(MAKE)
 
 override_dh_install:
-	cd src && make install
+	dh_install
