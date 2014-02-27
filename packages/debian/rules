@@ -9,6 +9,9 @@ export DH_OPTIONS
 %:
 	dh $@
 
+override_dh_auto_configure:
+	dh_auto_configure -- --with-friso-ini=/etc/friso/friso.ini
+
 # disable 'make check'.
 override_dh_auto_test:
 
