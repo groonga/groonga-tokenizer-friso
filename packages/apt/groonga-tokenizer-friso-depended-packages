@@ -2,3 +2,5 @@ debhelper
 autotools-dev
 pkg-config
 libgroonga-dev
+libfriso0
+libfriso-dev
