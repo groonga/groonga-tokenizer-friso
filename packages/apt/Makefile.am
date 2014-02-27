@@ -4,7 +4,7 @@ CHROOT_BASE = /var/lib/chroot
 ARCHITECTURES = i386 amd64
 CODES = wheezy jessie unstable precise quantal saucy
 FRISO_PACKAGE = friso
-FRISO_VERSION = 1.6.0
+FRISO_VERSION = 1.6.1
 FRISO_BASE_NAME = $(FRISO_PACKAGE)-$(FRISO_VERSION)
 
 all:
@@ -47,7 +47,7 @@ upload: ensure-rsync-path
 	     dists pool $(RSYNC_PATH)/$${distribution});	\
 	done
 
-build: build-friso-deb build-package-deb
+build: build-package-deb
 
 build-package-deb: source
 	./build-in-chroot.sh						\
