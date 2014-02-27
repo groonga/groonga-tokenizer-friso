@@ -8,11 +8,19 @@ Build-Depends:
 Standards-Version: 3.9.6
 Homepage: https://code.google.com/p/friso/
 
-Package: friso
+Package: libfriso0
 Section: libs
 Architecture: any
 Depends:
   ${misc:Depends},
   ${shlibs:Depends}
 Description: Chinese word segmenter library
+
+Package: libfriso-dev
+Section: libdevel
+Architecture: any
+Depends:
+  ${misc:Depends},
+  ${shlibs:Depends}
+Description: Development files for Chinese word segmenter library
 
