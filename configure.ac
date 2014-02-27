@@ -79,8 +79,12 @@ AC_CONFIG_FILES([
   packages/Makefile
   packages/apt/Makefile
   packages/yum/Makefile
+  packages/rpm/Makefile
+  packages/rpm/centos/Makefile
   packages/rpm/centos/groonga-tokenizer-friso.spec
+  packages/rpm/fedora/Makefile
   packages/rpm/fedora/groonga-tokenizer-friso.spec
+  packages/source/Makefile
 ])
 
 AC_OUTPUT
