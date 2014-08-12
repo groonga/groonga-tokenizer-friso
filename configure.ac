@@ -52,7 +52,7 @@ AC_ARG_WITH(friso-ini,
 if test "x$friso_ini" != "x"; then
    FRISO_INI_PATH="$friso_ini"
 else
-   AC_ERROR("")
+   AC_ERROR("Could not find friso.ini. Please specify friso.ini PATH with '--with-friso-ini=PATH'")
 fi
 AC_DEFINE_UNQUOTED([FRISO_INI_PATH], ["$friso_ini"], ["Friso ini file"])
 
