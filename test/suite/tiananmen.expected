@@ -10,19 +10,27 @@ tokenize TokenFriso "我到北京天安门"
   [
     {
       "value": "我",
-      "position": 0
+      "position": 0,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "到",
-      "position": 1
+      "position": 1,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "北京",
-      "position": 2
+      "position": 2,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "天安门",
-      "position": 3
+      "position": 3,
+      "force_prefix": false,
+      "force_prefix_search": false
     }
   ]
 ]

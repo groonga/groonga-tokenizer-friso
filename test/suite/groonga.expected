@@ -10,107 +10,159 @@ tokenize TokenFriso "Groonga是全文搜索引擎的列存储功能。你可以�
   [
     {
       "value": "Groonga",
-      "position": 0
+      "position": 0,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "是",
-      "position": 1
+      "position": 1,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "全文",
-      "position": 2
+      "position": 2,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "搜索引擎",
-      "position": 3
+      "position": 3,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "的",
-      "position": 4
+      "position": 4,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "列",
-      "position": 5
+      "position": 5,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "存储",
-      "position": 6
+      "position": 6,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "功能",
-      "position": 7
+      "position": 7,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "。",
-      "position": 8
+      "position": 8,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "你",
-      "position": 9
+      "position": 9,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "可以",
-      "position": 10
+      "position": 10,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "开发",
-      "position": 11
+      "position": 11,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "一个",
-      "position": 12
+      "position": 12,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "全文",
-      "position": 13
+      "position": 13,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "搜索",
-      "position": 14
+      "position": 14,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "功能",
-      "position": 15
+      "position": 15,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "与",
-      "position": 16
+      "position": 16,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "高性能",
-      "position": 17
+      "position": 17,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "的",
-      "position": 18
+      "position": 18,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "应用",
-      "position": 19
+      "position": 19,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "程序",
-      "position": 20
+      "position": 20,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "，",
-      "position": 21
+      "position": 21,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "并使",
-      "position": 22
+      "position": 22,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "用",
-      "position": 23
+      "position": 23,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "Groonga",
-      "position": 24
+      "position": 24,
+      "force_prefix": false,
+      "force_prefix_search": false
     },
     {
       "value": "。",
-      "position": 25
+      "position": 25,
+      "force_prefix": false,
+      "force_prefix_search": false
     }
   ]
 ]
