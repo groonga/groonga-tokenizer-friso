@@ -56,7 +56,7 @@ else
 fi
 AC_DEFINE_UNQUOTED([FRISO_INI_PATH], ["$friso_ini"], ["Friso ini file"])
 
-GROONGA_REQUIRED_VERSION=3.0.5
+GROONGA_REQUIRED_VERSION=8.0.9
 PKG_CHECK_MODULES([GROONGA], [groonga >= ${GROONGA_REQUIRED_VERSION}])
 
 _PKG_CONFIG(GROONGA_PLUGINS_DIR, [variable=pluginsdir],    [groonga])
