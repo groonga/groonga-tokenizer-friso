@@ -8,7 +8,7 @@ compiler:
 
 install:
   - curl --silent --location \
-    https://raw.github.com/groonga/groonga/master/data/travis/setup.sh | sh
+    https://raw.githubusercontent.com/groonga/groonga/master/data/travis/setup.sh | sh
   - travis/friso.sh
 
 before_script:
