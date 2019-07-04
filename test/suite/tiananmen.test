@@ -1,3 +1,0 @@
-register tokenizers/friso
-
-tokenize TokenFriso "我到北京天安门"
