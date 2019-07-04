@@ -7,14 +7,7 @@ compiler:
 install:
   - curl --silent --location \
     https://raw.github.com/groonga/groonga/master/data/travis/setup.sh | sh
-  - git clone --depth 1 https://github.com/lionsoul2014/friso.git
-  - cd friso
-  - sed -i -e 's,./vendors/dict/UTF-8/,/usr/local/share/friso/dict/UTF-8/,' friso.ini
-  - sudo cp friso.ini /usr/local/etc/
-  - sudo mkdir -p /usr/local/share/friso
-  - sudo cp -r ./vendors/dict /usr/local/share/friso
-  - cd src && make && sudo make install
-  - cd ../../
+  - travis/friso.sh
 
 before_script:
   - ./autogen.sh
