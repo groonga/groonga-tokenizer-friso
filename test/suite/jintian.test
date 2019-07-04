@@ -1,0 +1,3 @@
+register tokenizers/friso
+
+tokenize TokenFriso "今天"
