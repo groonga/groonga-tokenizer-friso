@@ -100,8 +100,8 @@ static void friso_token_push(grn_ctx *ctx,
   config = tokenizer->config;
   task = tokenizer->task;
   token = tokenizer->next;
-  if (friso_next(friso, config, task) != NULL) {
-    token_length = task->hits->length;
+  if (next_mmseg_token(friso, config, task) != NULL) {
+    token_length = task->token->length;
     tokenizer->next += token_length;
 
     if (tokenizer->next == tokenizer->end) {
