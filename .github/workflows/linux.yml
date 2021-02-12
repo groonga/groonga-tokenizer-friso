@@ -16,7 +16,7 @@ jobs:
           sudo apt-get update
       - name: Install packages
         run: |
-          sudo apt install y -V libgroonga-dev
+          sudo apt install -y -V libgroonga-dev
       - name: Install friso
         run: |
           git clone --depth 1 https://github.com/lionsoul2014/friso.git
