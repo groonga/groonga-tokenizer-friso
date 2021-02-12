@@ -5,7 +5,7 @@
 Install libgroonga-dev, friso in the advance.
 
 * Groonga http://groonga.org/
-* Friso https://code.google.com/p/friso/
+* Friso https://github.com/lionsoul2014/friso
 
 Build this tokenizer.
 
