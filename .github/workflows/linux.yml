@@ -11,9 +11,9 @@ jobs:
         with:
           submodules: recursive
       - name: Enable Groonga repository
-          run: |
-            sudo add-apt-repository ppa:groonga/ppa
-            sudo apt-get update
+        run: |
+          sudo add-apt-repository ppa:groonga/ppa
+          sudo apt-get update
       - name: Install packages
         run: |
           sudo apt install y -V libgroonga-dev
