@@ -34,6 +34,6 @@ jobs:
           sudo make install
       - name: Check friso tokenizer
         run: |
-          sudo apt install -y -V ruby-rubygems
+          sudo apt install -y -V rubygems-integration
           sudo gem install grntest
           make check
