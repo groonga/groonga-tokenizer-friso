@@ -1,0 +1,36 @@
+name: Linux
+on:
+  - push
+  - pull_request
+jobs:
+  autotools:
+    name: Autotools
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Enable Groonga repository
+          run: |
+            sudo add-apt-repository ppa:groonga/ppa
+            sudo apt-get update
+      - name: Install packages
+        run: |
+          sudo apt install y -V libgroonga-dev
+      - name: Install friso
+        run: |
+          git clone --depth 1 https://github.com/lionsoul2014/friso.git
+          cd friso
+          sed -i -e 's,./vendors/dict/UTF-8/,/usr/local/share/friso/dict/UTF-8/,' friso.ini
+          sudo cp friso.ini /usr/local/etc/
+          sudo mkdir -p /usr/local/share/friso
+          sudo cp -r ./vendors/dict /usr/local/share/friso
+          sudo make install
+      - name: Build friso tokenizer
+        run: |
+          ./autogen.sh
+          ./configure --with-friso=/usr/local/lib --wtth-friso-ini=/usr/local/share/friso/friso.ini
+          sudo make install
+      - name: Check friso tokenizer
+        run: |
+          make check
