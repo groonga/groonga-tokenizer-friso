@@ -30,7 +30,7 @@ jobs:
       - name: Build friso tokenizer
         run: |
           ./autogen.sh
-          ./configure --with-friso=/usr/local/lib --with-friso-ini=/usr/local/share/friso/friso.ini
+          ./configure --with-friso=/usr/local/lib --with-friso-ini=/usr/local/etc/friso.ini
           sudo make install
       - name: Check friso tokenizer
         run: |
